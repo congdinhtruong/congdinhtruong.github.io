@@ -1,0 +1,176 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 100%;
+    font-family: serif, sans-serif;
+    background-color: #ebebed;
+}
+header, section, aside {
+    display: block;
+}
+
+/*FORMAT FOR TOP HEADER*/
+header {
+    background-color: #fdd540;
+    box-shadow: 0 0 15px #ccc;
+}
+
+#header_wrapper {
+    width: 1200px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header_wrapper:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#logo {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    float: left;
+    display: table;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#logo img, #logo span {
+    display: table-cell;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#main_nav {
+    display: table;
+    float: right;
+    width: 1050px;
+    text-align: center;
+}
+
+#main_nav span, #main_nav a {
+    display: table-cell;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+#search_box input[type='text'] {
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+#main_nav a:hover {
+    background: #ebebeb;
+}
+
+#main_nav a i{
+    display: block;
+}
+
+/*FORMAT FOR BODY*/
+#body_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#body_wrapper:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#left_col {
+    float: left;
+    width: 850px;
+}
+
+#right_col {
+    float: right;
+    width: 340px;
+}
+
+
+#main_banner img {
+    width: 850px;
+    height: 400px;
+}
+
+#main_phone_list {
+    text-align: justify;
+}
+
+#main_phone_list:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.phone_box {
+    width: 410px;
+    height: 200px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: #fff;
+    padding: 30px 20px;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 25px #ccc;
+    border: 1px solid #fdd504;
+}
+
+.phone_box:hover {
+    outline-color: #fdd504;
+    outline-style: double;
+}
+
+.phone_box img {
+    width: 100px;
+    height: 120px;
+    float: left;
+    margin-right: 35px;
+}
+
+.info {
+    display: inline-block;
+    width: 220px;
+}
+
+.info h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: blue;
+    /*    không cho xuống hàng*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info ul {
+    list-style: circle;
+    list-style-position: inside;
+    text-indent: 15px;
+    display: inline-block;
+}
+
+#right_col ul li {
+    list-style-type: none;
+}
+
+#right_col img {
+    width: 100%;
+}
